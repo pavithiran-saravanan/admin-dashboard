@@ -123,9 +123,6 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 50%;
 }
 
-.search-icon{
-}
-
 .search-bar{
     border: none;
     outline: none;
