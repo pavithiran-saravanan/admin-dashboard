@@ -34,8 +34,8 @@
 .main{
     background-color: rgb(233, 237, 233);
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    grid-template-columns: 3fr 1fr;
     padding: 25px;
 }
 
@@ -126,7 +126,7 @@
     grid-column: 5/6;
     width: 50px;
     height: 50px;
-    background-color: #ea3;
+    background-color: rgb(226, 187, 79);
 }
 
 .username{
@@ -213,13 +213,12 @@
 .projects-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-self: stretch;
+    gap: 25px;
 }
 
 .project-card{
     background-color: white;
-    box-shadow: 2px 2px 10px rgba(39, 39, 39, 0.11);
+    box-shadow: 2px 2px 6px rgba(39, 39, 39, 0.11);
     border-radius: 10px;
     padding: 25px;
     display: grid;
@@ -228,11 +227,20 @@
 }
 
 .project-title{
+    font-size: 18px;
     font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-description{
+    color: #888;
+    font-size: 17px;
 }
 
 .project-options .icon{
-    background-color: #ccc;
+    background-color: #ddd;
+    height: 25px;
+    width: 25px;
 }
 
 .project-options{
@@ -240,4 +248,71 @@
     grid-auto-flow: column;
     justify-content: end;
     gap: 20px;
+}
+
+.announcements-grid{
+    box-shadow: 2px 2px 6px rgba(39, 39, 39, 0.11);
+    background-color: white;
+    display: grid;
+    align-self: stretch;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.trending-grid{
+    background-color: white;
+    display: grid;
+    align-self: stretch;
+}
+
+.announcement-card{
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0px;
+}
+
+.announcement-card:last-child{
+    border: none;
+}
+
+.announcement-title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.announcement-text{
+    color: #888;
+    font-size: 14px;
+}
+
+.trending-grid{
+    box-shadow: 2px 2px 6px rgba(39, 39, 39, 0.11);
+    border-radius: 10px;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+}
+
+.trending .icon{
+    background-color: rgb(226, 187, 79);
+    height: 40px;
+    width: 40px;
+    grid-row: 1/-1;
+}
+
+.trend{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    row-gap: 3px;
+    column-gap: 15px;
+}
+
+.trend-id{
+    font-weight: 600;
+}
+
+.trend-name{
+    color: #888;
+    font-size: 14px;
 }
