@@ -10,10 +10,17 @@ body{
     height: 100dvh;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
 .container{
     height: 100%;
     display: grid;
-    grid-template-columns: minmax(320px, 1fr) 4fr;
+    grid-template-columns: minmax(320px, 1fr) 4.5fr;
     grid-template-rows: auto 4fr;
 }
 
@@ -43,7 +50,7 @@ body{
     gap: 40px;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto;
-    padding: 40px 30px;
+    padding: 40px 40px;
     align-content: start;
 }
 
@@ -64,7 +71,7 @@ body{
 .brandname{
     display: grid;
     align-items: center;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 900;
 }
 
@@ -90,7 +97,7 @@ body{
 .option-text{
     display: grid;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -111,13 +118,13 @@ body{
 }
 
 .search-icon{
-    background-color: #dee;
+    background-color: #e3e3e3;
 }
 
 .search-bar{
     border: none;
     outline: none;
-    background-color: #dee;
+    background-color: #e3e3e3;
     border-radius: 25px;
     height: 40px;
     padding-left: 15px;
@@ -126,7 +133,7 @@ body{
 
 .notification-icon{
     grid-column: 4/5;
-    background-color: #dee;
+    background-color: #e3e3e3;
     place-self: center;    
 }
 
@@ -276,7 +283,7 @@ body{
 .trending-grid{
     background-color: white;
     display: grid;
-    align-self: stretch;
+    gap: 15px;
 }
 
 .announcement-card{
@@ -305,7 +312,7 @@ body{
     border-radius: 10px;
     padding: 25px;
     display: grid;
-    gap: 25px;
+    /* gap: 25px; */
     align-content: start;
 }
 
