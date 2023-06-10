@@ -59,12 +59,11 @@ input[type="search"]::-webkit-search-results-decoration {
     grid-template-columns: auto 1fr;
     gap: 15px;
     height: 50px;
+    place-content: center;
 }
 
 .logo{
-    height: 50px;
     width: 50px;
-    background-color: rgb(36, 144, 115);
     border-radius: 5px;
 }
 
@@ -88,9 +87,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .option-icon{
-    background-color: rgb(36, 144, 115);
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 
@@ -111,14 +109,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .icon{
-    background-color: rgb(36, 144, 115);
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
 .search-icon{
-    background-color: #e3e3e3;
 }
 
 .search-bar{
@@ -133,7 +129,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .notification-icon{
     grid-column: 4/5;
-    background-color: #e3e3e3;
     place-self: center;    
 }
 
@@ -141,6 +136,7 @@ input[type="search"]::-webkit-search-results-decoration {
     grid-column: 5/6;
     width: 50px;
     height: 50px;
+    overflow: hidden;
     background-color: rgb(226, 187, 79);
 }
 
@@ -257,16 +253,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .project-options .icon{
-    background-color: #ddd;
-    height: 35px;
-    width: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 .project-options{
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
-    gap: 20px;
+    gap: 30px;
     place-self: end;
 }
 
@@ -322,6 +317,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 40px;
     grid-row: 1/-1;
     place-self: center;
+    overflow: hidden;
 }
 
 .trend{
@@ -329,17 +325,32 @@ input[type="search"]::-webkit-search-results-decoration {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     display: grid;
-    row-gap: 3px;
+    row-gap: 2px;
     column-gap: 15px;
 }
 
 .trend-id{
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 15px;
     align-self: end;
 }
 
 .trend-name{
     color: #888;
     font-size: 14px;
-    place-self: start;
+    align-self: start;
+}
+
+.white{
+    fill: white;
+}
+
+.profile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon:hover, .btn:hover{
+    cursor: pointer;
 }
