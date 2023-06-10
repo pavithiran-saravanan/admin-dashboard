@@ -1,26 +1,78 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(350px, 1fr) 4fr;
     grid-template-rows: 1fr 4fr;
-}
-
-.header{
-    background-color: white;
 }
 
 .sidebar{
     background-color: rgb(29, 116, 93);
     color: white;
     grid-row: 1/-1;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: auto auto auto  ;
+    gap: 60px;
+}
+
+.header{
+    background-color: white;
 }
 
 .main{
     background-color: whitesmoke;
+}
+
+.branding{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    height: 50px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(36, 144, 115);
+    border-radius: 5px;
+}
+
+.brandname{
+    display: grid;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.opt-grp{
+    display: grid;
+    gap: 15px;
+}
+
+.option{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    padding-left: 10px;
+}
+
+.option-icon{
+    background-color: rgb(36, 144, 115);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.option-text{
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
 }
