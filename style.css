@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -15,8 +15,12 @@
     --color-secondary: rgb(230, 96, 154);
 }
 
-body{
-    height: 100dvh;
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -30,7 +34,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 100%;
     display: grid;
     grid-template-columns: minmax(320px, 1fr) 4.5fr;
-    grid-template-rows: auto 4fr;
+    grid-template-rows: auto 1fr;
 }
 
 .sidebar{
@@ -54,6 +58,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main{
+    grid-row: 2/-1;
     background-color: rgb(237, 233, 235);
     display: grid;
     gap: 40px;
@@ -373,4 +378,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .btn:hover{
     background-color: var(--color-medium);
+}
+
+.footer{
+    height: 2px;
 }
